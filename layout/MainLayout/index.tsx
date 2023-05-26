@@ -18,9 +18,7 @@ function MainLayout({ children }: IProps) {
                 <Fragment>
                     <Banner />
                     <Header />
-                    <div style={{marginTop: "123px"}}>
                         {children}
-                    </div>
                     <Footer />
                 </Fragment>
             </div>
