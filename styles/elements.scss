@@ -1,0 +1,25 @@
+.tag {
+    position: relative;
+    color: var(--tag-color);
+    display: flex;
+    align-items: center;
+
+    span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 16px;
+    }
+
+    &::before {
+        content: '';
+        width: 20px;
+        height: 40px;
+        background: var(--tag-color);
+        display: block;
+        border-radius: 4px;
+    }
+
+    margin-bottom: 24px;
+}

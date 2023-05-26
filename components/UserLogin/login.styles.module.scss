@@ -1,0 +1,34 @@
+.imgDiv {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.formDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 370px;
+    height: 230px;
+}
+
+.btnLogin {
+    background: #DB4444;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+}   
+
+.forgetPwdText{
+    color:#DB4444 ;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.formInput{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    outline:none;
+    box-shadow:none;
+    width: 100%;
+}

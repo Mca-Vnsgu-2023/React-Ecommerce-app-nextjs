@@ -1,0 +1,36 @@
+.sliderDiv {
+    margin: 50px 0;
+}
+
+.sliderImg {
+    max-width: 100%;
+    width: 890px;
+    height: 400px;
+}
+
+.textOnImg {
+    position: absolute;
+    max-width: 100%;
+    width: 500px;
+    padding: 0px 20px 20px 60px;
+    top: 20px;
+    color: rgb(204, 201, 201);
+    height: auto;
+}
+
+.shopNowDiv {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #080808;
+    border: 0.954145px solid white;
+    border-radius: 40.0741px;
+    color: white;
+    position: absolute;
+    top: 250px;
+}
+
+.cateUl{
+    list-style: none;
+    margin: 50px 25px 25px 30px;
+}
+

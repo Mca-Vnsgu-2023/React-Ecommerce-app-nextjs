@@ -1,0 +1,49 @@
+.placeOrderBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 45px;
+    background: #DB4444;
+    border-radius: 4px;
+    border: none;
+    color: #F5F5F5;
+    margin-top: 20px;
+}
+
+.formTag{
+
+    label{
+        opacity: 0.5;
+        font-size: 14px;
+    }
+    input[type=text]{
+        border: none;
+        background-color:#F5F5F5;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    input[type=checkbox]{
+        width: 20px;
+        height: 20px;
+        accent-color: #DB4444;
+        border-radius: 4px;
+    }
+    
+}
+
+.radioDiv{
+    display: flex;
+    align-items: center;
+}
+
+.inputRadio{
+    width: 20px;
+    height: 20px;
+    accent-color: #0000;
+    border-radius: 4px;
+}
+
+
+
+

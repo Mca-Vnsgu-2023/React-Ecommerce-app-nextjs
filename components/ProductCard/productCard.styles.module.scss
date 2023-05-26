@@ -1,0 +1,166 @@
+.productCard {
+    padding-top: 10px;
+    margin-bottom: 50px;
+
+    .imgWrap {
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100dvh;
+        max-width: 270px;
+        max-height: 250px;
+        position: relative;
+        overflow: hidden;
+
+        .addToCart {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            max-height: 40px;
+            background-color: #000;
+            transition: all 0.4s ease-in-out;
+
+            button {
+                width: 100%;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+                color: var(--secondary-color);
+            }
+        }
+
+        img {
+            position: relative !important;
+            height: 90%;
+            width: 90%;
+            inset: 0px;
+            color: transparent;
+            aspect-ratio: auto !important;
+            object-fit: contain !important;
+            transition: all 0.4s ease-in-out;
+        }
+
+        &:hover {
+            .addToCart {
+                bottom: 0;
+            }
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .productInfo {
+        .title {
+            padding-top: 16px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+        }
+
+        .priceDiv {
+            padding-top: 5px;
+            font-weight: 500;
+            .price{
+                color: var(--tag-color);
+            }
+        }
+    }
+}
+
+.btnDiscount{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DB4444;
+    border-radius: 4px;
+    border: none;
+    color: #F5F5F5;
+    margin-left: 10px;
+    margin-top: -240px;
+    height: 26px;
+    padding: 4px 12px;
+}
+
+// .btnEye{
+//     position: absolute;
+//     display: flex;
+//     justify-content: center;
+//     margin-left: 230px;
+//     margin-top: -240px;
+// }
+
+.btnHeart{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: -240px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+
+.btnEye{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: -200px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+
+    // &.active{
+    //     background-color: #DB4444;
+    // }
+}
+
+
+.btnViewProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-left: 500px;
+    width: 234px;
+    height: 56px;
+    background: #DB4444;
+    border-radius: 4px;
+    border: none;
+    color: #F5F5F5;
+}
+
+.todayText{
+    margin: 0;
+    padding-top: 10px;
+    color: #DB4444;
+}
+
+
+
+
+
+
+ 
