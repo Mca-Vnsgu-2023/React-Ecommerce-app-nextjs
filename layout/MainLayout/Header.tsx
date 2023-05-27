@@ -8,6 +8,7 @@ import { useSelector } from '@/Store/Store'
 import { totalCartItemsSelector } from '@/components/AddToCart/store/CartItemReducer'
 import { totalWishListItem } from '@/components/WishList/store/WishListItemReducer'
 import { useRouter } from 'next/router'
+import { Dropdown } from 'react-bootstrap'
 
 const Header = () => {
 
@@ -40,9 +41,9 @@ const Header = () => {
         route.push('/')
     }
 
-    useEffect(()=>{
+    useEffect(() => {
 
-    },[searchInput])
+    }, [searchInput])
 
 
     return (
@@ -106,22 +107,29 @@ const Header = () => {
                             {isLogin == true && userData &&
                                 <>
                                     <div className='mx-2'>
-                                        <div className="nav-item">
-                                            <div className="dropdown" style={{ marginLeft: "20px" }}>
-                                                <div className={Styles.avatarImg} role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <Image src={userData?.image}
-                                                        loading='eager'
-                                                        priority
-                                                        width={40} height={40}
-                                                        alt='userImage'
-                                                    />
-                                                </div>
-                                                <ul className="dropdown-menu" >
-                                                    <li><Link className="dropdown-item" href="/MyOrder">My Order</Link></li>
-                                                    <li><Link className="dropdown-item" href="/">My Review</Link></li>
-                                                    <li><Link className="dropdown-item" href="/" onClick={handleLogOut}>LogOut</Link></li>
-                                                </ul>
-                                            </div>
+                                        <div>
+                                            <Dropdown>
+                                                <Dropdown.Toggle>
+                                                    <div className={Styles.avatarImg}>
+                                                        <Image src={userData?.image}
+                                                            loading='eager'
+                                                            priority
+                                                            width={40} height={40}
+                                                            alt='userImage'
+                                                        />
+                                                    </div>
+                                                </Dropdown.Toggle>
+                                                <Dropdown.Menu>
+                                                    <Dropdown.Item href="/MyOrder">
+                                                        <i className="fa-solid fa-clipboard-list"></i>
+                                                        <span style={{ paddingLeft: "15px" }}>My Order</span>
+                                                    </Dropdown.Item>
+                                                    <Dropdown.Item href="/" onClick={handleLogOut}>
+                                                        <i className="fa-solid fa-arrow-right-from-bracket"></i>
+                                                        <span style={{ paddingLeft: "15px" }}>LogOut</span>
+                                                    </Dropdown.Item>
+                                                </Dropdown.Menu>
+                                            </Dropdown>
                                         </div>
                                     </div>
                                     <div className='mx-2'>
