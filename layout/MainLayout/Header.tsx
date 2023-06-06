@@ -38,7 +38,6 @@ const Header = () => {
         if (searchInput !== "") {
             route.push(`/searchProduct/${searchInput}`)
         }
-        route.push('/')
     }
 
     useEffect(() => {
