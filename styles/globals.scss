@@ -169,28 +169,31 @@ div.dark {
     }
 }
 
-.dropdown-toggle.btn.btn-primary{
-  background: none;
-  border: none;
-  padding: 0;
-  box-shadow: none;
+.userDropdown {
+  .dropdown-toggle.btn.btn-primary{
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .dropdown-toggle.show.btn.btn-primary{
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .dropdown-toggle::after {
+    display: none;
+    padding: 0;
+  }
+  
+  .dropdown-menu.show{
+    margin-top: 5px;
+    margin-left: -50px;
+  }
 }
 
-.dropdown-toggle.show.btn.btn-primary{
-  padding: 0;
-  border: none;
-  box-shadow: none;
-}
-
-.dropdown-toggle::after {
-  display: none;
-  padding: 0;
-}
-
-.dropdown-menu.show{
-  margin-top: 5px;
-  margin-left: -50px;
-}
 
 div.light {
   --foreground-color: var(--primary-color);

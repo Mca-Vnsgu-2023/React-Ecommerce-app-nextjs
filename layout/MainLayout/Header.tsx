@@ -105,7 +105,7 @@ const Header = () => {
                             }
                             {isLogin == true && userData &&
                                 <>
-                                    <div className='mx-2'>
+                                    <div className='userDropdown mx-2'>
                                         <div>
                                             <Dropdown>
                                                 <Dropdown.Toggle>
